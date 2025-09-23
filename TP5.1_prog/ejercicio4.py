@@ -1,10 +1,10 @@
 # Creamos la lista con posibles elementos repetidos
 
-datos = [1, 3, 5, 3, 7, 1, 9, 5, 3]
+datos: list = [1, 3, 5, 3, 7, 1, 9, 5, 3]
 
 # Creamos la lista que almacenará los elementos de la lista datos sin repetir
 
-datos_sin_repetir = []
+datos_sin_repetir: list = []
 
 # Rellenamos la lista datos_sin_repetir con los elementos de la lista datos sin repetir
 

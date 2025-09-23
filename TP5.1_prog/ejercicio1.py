@@ -1,6 +1,6 @@
 # Creamos la variable tipo lista que contiene las notas
 
-lista_notas = [5, 8, 6, 9, 9, 10, 6, 7, 7, 8]
+lista_notas: list = [5, 8, 6, 9, 9, 10, 6, 7, 7, 8]
 
 # Imprimimos por pantalla la lista completa
 
@@ -11,7 +11,7 @@ print(f"{lista_notas[-1]}.")
 
 #Creamos la variable promedio
 
-promedio = 0
+promedio: int = 0
 
 # Calculamos el promedio de las notas
 
@@ -25,8 +25,8 @@ print(f"El promedio de dicha lista es {promedio}.")
 
 # Creamos las variables max y min, las cuales van a almacenar las notas máxima y mínima, respectivamente
 
-max = 0
-min = 10
+max: int = 0
+min: int = 10
 
 # Calculamos e imprimimos las notas máxima y mínima
 
