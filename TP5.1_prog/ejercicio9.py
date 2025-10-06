@@ -1,23 +1,23 @@
-tateti = [[" ", "A", "B", "C"], ["1", "-", "-", "-"], ["2", "-", "-", "-"], ["3", "-", "-", "-"]]
+tateti: list = [[" ", "A", "B", "C"], ["1", "-", "-", "-"], ["2", "-", "-", "-"], ["3", "-", "-", "-"]]
 for i in range(len(tateti)):
     for j in range(len(tateti[i])):
         print(tateti[i][j], end = " ")
     print()
 
-bandera = True
+bandera: bool = True
 
 while bandera:
 
-    guion_1 = True
-    guion_2 = True
+    guion_1: bool = True
+    guion_2: bool = True
 
     while guion_1:
-        fila = input("Jugador 1 (X), ingresa la fila en la que desea colocar una X: ")
+        fila: str = input("Jugador 1 (X), ingresa la fila en la que desea colocar una X: ")
         while fila not in ["1", "2", "3"]:
             fila = input("Intenta con una fila válida: ")
         fila = int(fila)
     
-        columna = input("Jugador 1 (X), ingresa la columna en la que desea colocar una X: ")
+        columna: str = input("Jugador 1 (X), ingresa la columna en la que desea colocar una X: ")
         while columna.upper() not in ["A", "B", "C"]:
             columna = input("Intenta con una columna válida: ")
         if columna.upper() == "A":

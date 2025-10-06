@@ -1,6 +1,10 @@
 digitos: int = 0
+
+
 # while numero[0] not in "123456789":
-#     numero = numero[1: -1]
+#     numero = numero[1: -1: 1]
+
+
 bandera: bool = True
 
 while bandera:

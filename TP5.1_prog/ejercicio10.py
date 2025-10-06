@@ -1,14 +1,13 @@
 from random import randint
 
-lista = [[randint(0, 10) for i in range(7)] for j in range(4)]
+lista: list = [[randint(0, 10) for i in range(7)] for j in range(4)]
 
 print(f"Esta lista muestra cuántas unidades vendió cada producto durante una semana: {lista}.")
 
-cant_por_producto = [0, 0, 0, 0]
-ventas_por_dia = [0, 0, 0, 0, 0, 0, 0]
-max_venta_por_dia = 0
-max_venta_por_producto = 0
-dia_mas_ventas = 0
+cant_por_producto: list = [0, 0, 0, 0]
+ventas_por_dia: list = [0, 0, 0, 0, 0, 0, 0]
+max_venta_por_dia: int = 0
+max_venta_por_producto: int = 0
 
 for j in range(len(lista)):
     for i in range(len(lista[j])):
@@ -23,8 +22,8 @@ for i in range(len(ventas_por_dia)):
     if max_venta_por_dia < ventas_por_dia[i]:
         max_venta_por_dia = ventas_por_dia[i]
 
-dia_mas_ventas = ventas_por_dia.index(max_venta_por_dia)
-prod_mas_vendido = cant_por_producto.index(max_venta_por_producto)
+dia_mas_ventas: int = ventas_por_dia.index(max_venta_por_dia)
+prod_mas_vendido: int = cant_por_producto.index(max_venta_por_producto)
 
 print(f"Esta lista muestra las ventas individuales de cada producto durante toda la semana: {cant_por_producto}.")
 
